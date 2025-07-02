@@ -1,0 +1,10 @@
+{
+    "title": "TauriAppWheel Installer",
+    "icon-size": 100,
+    "icon": "Launchpad.png",
+    "contents": [
+      { "x": 130, "y": 220,"type": "file", "path": "tauri-app-wheel" },
+      { "x": 410, "y": 220,"type": "link", "path": "/Applications" }
+    ]
+  }
+  
