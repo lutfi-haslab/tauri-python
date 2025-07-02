@@ -10,6 +10,7 @@ dependencies = [
     "pytauri == 0.6.*",
     "pytauri-wheel == 0.6.*",
     "pyinstaller == 6.14.1",
+    "jurigged == 0.6.1"
 ]
 
 

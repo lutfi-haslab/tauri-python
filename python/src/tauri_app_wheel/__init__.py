@@ -41,7 +41,7 @@ async def greet(body: Person, app_handle: AppHandle) -> Greeting:
     notification_builder.show(title="Greeting", body=f"Hello, {body.name}!")
 
     return Greeting(
-        message=f"Hello, {body.name}! You've been greeted from Python {sys.version}!"
+        message=f"Hello keren, {body.name}! You've been greeted from Python {sys.version}!"
     )
 
 def main() -> int:
