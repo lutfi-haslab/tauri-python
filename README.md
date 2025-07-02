@@ -9,8 +9,8 @@ git clone https://github.com/pytauri/pytauri.git
 cd pytauri
 
 # build frontend assets
-pnpm install
-pnpm -r run build
+bun install
+bun run build
 
 # activate virtual environment
 uv venv
@@ -24,13 +24,13 @@ uv pip install --reinstall -e python/pytauri-wheel
 cd examples/tauri-app-wheel
 
 # install the example package
-uv pip install --reinstall -e ./python
+pipenv install --reinstall -e ./python
 ```
 
 ## Run in Development Mode
 
 ```bash
-pnpm dev  # launch Vite dev server
+bun run dev  # launch Vite dev server
 ```
 
 then in another terminal:
@@ -56,7 +56,7 @@ python -m tauri_app_wheel
 ## Build SDist and Wheel
 
 ```bash
-pnpm build  # build frontend assets
+bun run build  # build frontend assets
 uv build ./python
 
 pipenv run pyinstaller tauri_app_wheel.spec
