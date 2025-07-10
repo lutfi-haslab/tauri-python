@@ -31,7 +31,7 @@ pipenv install --reinstall -e ./python
 
 ```bash
 bun run dev  # launch Vite dev server
-python -m jurigged -w python/src -v python/src/tauri_app_wheel/__main__.py
+TAURI_APP_WHEEL_DEV=0 python -m jurigged -w python/src -v python/src/tauri_app_wheel/__main__.py
 ```
 
 then in another terminal:

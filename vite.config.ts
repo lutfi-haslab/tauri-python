@@ -1,7 +1,8 @@
 import { defineConfig } from "vite";
-
+import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig(async () => ({
+  plugins: [react()],
   build: {
     // build dist into `python/src/tauri_app_wheel/` so that we can include it in python sdist and wheel
     outDir: "python/src/tauri_app_wheel/frontend",

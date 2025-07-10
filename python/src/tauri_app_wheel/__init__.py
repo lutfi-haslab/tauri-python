@@ -14,7 +14,7 @@ from pydantic.alias_generators import to_camel
 from pytauri_wheel.lib import builder_factory, context_factory
 
 SRC_TAURI_DIR = Path(__file__).parent.absolute()
-TAURI_APP_WHEEL_DEV = environ.get("TAURI_APP_WHEEL_DEV") == "1"
+TAURI_APP_WHEEL_DEV = environ.get("TAURI_APP_WHEEL_DEV") == "0"
 import sys
 
 from pydantic import BaseModel

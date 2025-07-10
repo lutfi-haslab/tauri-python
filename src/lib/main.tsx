@@ -1,6 +1,6 @@
 import { message } from '@tauri-apps/plugin-dialog';
 import { Channel } from "@tauri-apps/api/core";
-import { pyInvoke } from './lib/tauri-plugin';
+import { pyInvoke } from './tauri-plugin';
 
 // DOM elements
 let greetInputEl: HTMLInputElement | null;
